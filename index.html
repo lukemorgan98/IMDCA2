@@ -1,0 +1,803 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.slim.min.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" crossorigin="anonymous"></script>
+    <script src="js/script.js"></script>
+    <title>IMD CA 2</title>
+
+</head>
+<body>
+   <!--Navbar-->
+   <nav class="navbar navbar-expand-lg bg-dark navbar-dark py-3 fixed-top width 60%">
+       <div class="container">
+        <a href="#" class="navbar-brand">Luke Morgan</a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navmenu">
+           <ul class="navbar-nav ms-auto">
+               <li class="nav-item">
+                    <a href="#AboutMe"  class="nav-link" ><i class="fa fa-fw fa-user"></i>About Me</a>
+               </li>
+               <li class="nav-item">
+                <a href="#Education" class="nav-link"><i class="fa fa-fw fa-graduation-cap"></i>Education</a>
+           </li>
+           <li class="nav-item">
+            <a href="#WorkExperience" class="nav-link"><i class="fa fa-fw fa-archive"></i>Work Experience</a>
+          </li>
+            <li class="nav-item">
+            <a href="#Projects" class="nav-link"><i class="fa fa-fw fa-desktop"></i>Projects</a>
+            </li>
+            <li class="nav-item">
+              <a href="#services" class="nav-link"><i class="fa fa-fw fa-meetup"></i></i>Work/Project</a>
+              </li>
+            <li class="nav-item">
+              <a href="#Interest" class="nav-link"><i class="fa fa-fw fa-futbol-o"></i>Interest</a>
+              </li>
+              <li class="nav-item">
+                <a href="#Contact" class="nav-link"><i class="fa fa-fw fa-envelope"></i>Contact Me</a>
+                </li>
+           </ul>
+        </div>
+       </div>
+   </nav>
+  
+
+      <!--Hero Section-->
+       <section class="bg-dark text-light p-5 text-center text-sm-start">
+           <div class="container">
+               <div class="d-sm-flex align-items-center justify-content-between">
+                   <div>
+                       <h1>Welcome to my<span class="text-warning">
+                        CV
+                       </span></h1>
+                       <p class="lead my-4">
+                        Hello my name is Luke Morgan I am 23 years old I live in Newbridge and I am currently studying at TUDublin Tallaght campus the course that I am studing is computer science I am hoping to graduate with an Honors degree with Software Devlopment I am looking for a job in software either as a front-end devloper or a back-end devloper I have a lot of skills in these areas such as c/c++ and MySQL. I have interest and hobbies in sports such as football and music you can find out more about me by looking throght my online CV below          
+                       </p>
+                       <button type="button" class="btn btn-primary btn-lg" data-bs-toggle="modal" data-bs-target="#EmailModel"> Email Me</button>
+                       <div class="modal fade" id="EmailModel" tabindex="-1" aria-labelledby="EmailModelLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                          <div class="modal-content text-dark">
+                            <div class="modal-header">
+                              <h5 class="modal-title" id="EmailModelLabel" >New message</h5>
+                              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                              <form>
+                                <div class="mb-3">
+                                  <label for="recipient-name" class="col-form-label">Recipient:</label>
+                                  <input type="text" class="form-control" id="recipient-name" placeholder="lukemorgan117@hotmail.com">
+                                </div>
+                                <div class="mb-3">
+                                  <label for="message-text" class="col-form-label">Message:</label>
+                                  <textarea class="form-control" id="message-text"></textarea>
+                                </div>
+                              </form>
+                            </div>
+                            <div class="modal-footer" >
+                              <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                              <button type="button" class="btn btn-success" id="send">Send</button>
+                              <div class="alert alert-success" role="alert" id="alert-div" style="display:none;">
+                               Message Sent
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- Button trigger modal-->   
+                     <button class="btn btn-primary btn-lg" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                      Contact Me
+                    </button> 
+                             <!-- Modal -->
+                   <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                      <div class="modal-dialog">
+                        <div class="modal-content text-dark">
+                          <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Contact Info</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                          </div>
+                          <div class="modal-body">
+                            <li>Name : Luke Morgan</li>
+                            <li>Email : lukemorgan117@hotmail.com </li>
+                            <li>Phone : 0858466506 </li>
+                            <li>Student No : X00138256</li>
+                            <li>College: TUDublin Tallaght</li>
+                          </div>
+                          <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <button class="btn btn-primary btn-lg" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling" >Info</button>
+                    <div class="offcanvas offcanvas-start text-dark" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1" id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
+                      <div class="offcanvas-header" >
+                        <h5 class="offcanvas-title" id="offcanvasScrollingLabel">Information about each Page</h5>
+                        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                      </div>
+                      <div class="offcanvas-body" >
+                        <h2>The Navbar Section</h2>
+                        <p>The reason that I choose a black navbar is because I like the look of it and beleived it was the best choose</p>
+                        <h2>The Showcase Section</h2>
+                        <p>The reason that I choose the black backgoud is because it was looks nicer and match the navbar
+                          the image suits the software devlopmer theme as well the buttons are there because I want convenice for the user to contact me
+                          and display the information easier 
+                        </p>
+                        <h2>The Boxes Section</h2>
+                        <p>I choose three boxes because I it was easier to fit across the page and I choose Github, LindedIn and Facebook the reason I choose
+                          those three is because I wanted to people to see my projects and could add me on LindedIn or Facebook I picked the black background 
+                          because it matches the navbar and thats why I pick the black backgroud the reason that I choosed cards was because I did not want it to 
+                          take up the whole screen also I wanted to display images so people know which one is which and that the go to a new page and not lose track
+                          of the CV
+                        </p>
+                        <h2>The About Me Section</h2>
+                        <p>I went for a grey background colour because I thought that I had to much dark theme going and I wanted to talk about myself giving what 
+                          I think I can provided for the company I also wanted easy access to my CV so that companys can downloaded it easier</p>
+                        <h2>The Education Section</h2>
+                        <p>I decided to leave the backgoud white as I thought it was more appleaing and I choose Accordion beacuse I wanted to display my gpa and easier to display my subject and grades also
+                          I also added an image and some text about the college and I wanted the user to click on the image that it goes to TUDublin website if they wish to learn more about 
+                          the college and what the college has to offer    
+                        </p>
+                        <h2>The Work Experience Section</h2>
+                        <p>
+                          I went with a horaziontal timeline it displays the information in a neat and nice format plus it also is different and not the same thing over
+                          and over again plus its colourful attracting the user more to that section
+                        </p>
+                        <h2>The Project Section</h2>
+                        <p>
+                          I choose 4 cards again only this time you can hover over them and you get a little animation when you do also when you click on it you get sent 
+                          to my Github with these projects 
+                        </p>
+                        <h2>The Interest Section</h2>
+                        <p>I decided to do a Carousel for my Interest as I thought a bit of images would look much better for this section but also because it would be
+                          far more intersting than just a table of with a list of my Interest I also added more some text explaining the interest and my achivements with 
+                          that interset. 
+                        </p>
+                        <h2>The Contact Section</h2>
+                        <p>I have gone for a more simplistic approach with the contact section on a white backgoud and having a few text boxes that needed to be filled
+                          expect for phone because I wanted to more about email a pop up bar appears showing that the email has been sent out and that I will get back 
+                          to that person   
+                        </p>
+                      </div>
+                    </div>
+                   </div>
+                   <img class="img-fluid w-80 d-none d-sm-block  " style="border-radius:50%;" src="img/me.jpg" alt=""/>
+               </div>
+           </div>
+       </section>
+
+        <!--Boxes Section-->
+       <section class="p-5">
+           <div class="container">
+               <div class="row text-center g-4">
+                   <div class="col-md">
+                       <div class="card bg-dark text-light">
+                        <div class="card-body text-center">
+                            <div class="h1 mb-3">
+                                <i class="bi bi-github"></i>
+                            </div>
+                            <h3 class="card-title mb-3">
+                                GitHub
+                            </h3>
+                            <p class="card-text">
+                                This is where you can find my latest projects and look at some of the code that I used in my project you can look at by clicking the link below
+                            </p>
+                            <a href="https://github.com/" target="_blank" class="btn btn-primary">Click Me</a>
+                        </div>
+                       </div>
+                   </div>
+                   <div class="col-md">
+                    <div class="card bg-secondary text-light">
+                        <div class="card-body text-center">
+                            <div class="h1 mb-3">
+                                <i class="bi bi-linkedin"></i>
+                            </div>
+                            <h3 class="card-title mb-3">
+                                LinkIn
+                            </h3>
+                            <p class="card-text">
+                                This is where you can view my LinkedIn profile to see who I am and see who I am connected with also can see my cv as well click on the link below
+                            </p>
+                            <a href="https://ie.linkedin.com/"  target="_blank" class="btn btn-dark">Click Me</a>
+                        </div>
+                       </div>
+                   </div>
+                   <div class="col-md">
+                    <div class="card bg-dark text-light">
+                        <div class="card-body text-center">
+                            <div class="h1 mb-3">
+                                <i class="bi bi-facebook"></i>
+                            </div>
+                            <h3 class="card-title mb-3">
+                                FaceBook
+                            </h3>
+                            <p class="card-text">
+                              This is where you can view my FaceBook profile to see who I am and see who I am friends with also you can do this by click on the link below
+                            </p>
+                            <a href="https://www.facebook.com/"  target="_blank" class="btn btn-primary">Click Me</a>
+                        </div>
+                       </div>
+                   </div>
+               </div>
+           </div>
+       </section>
+
+
+      <!--About Me Section-->
+        <section id="AboutMe" class="p-5 bg-dark text-light">
+            <div class="container">
+                <div class="row align-items-center justify-content-between">
+                <div class="col-md p-5">
+                    <h2>About Me</h2>
+                    <p class="lead">
+                      I am a Student of TUDublin Tallaght I am currently in my final year and learning Software Development 
+                    </p>
+                    <p>
+                      I am hoping to showcase my talents at also willing to learn more about how a company and how it opperates but more importanly to learn new things so that I can become a better software devloper you can view my CV below to see more details about me  
+                    </p>
+                    <a href="LukeMorganCV.PDF" target="_blank" class="btn btn-primary mt-3">
+                      View my CV
+                  </a>
+                  
+                </div>
+                <div class="col-md">
+                    <img src="img/me.jpg" width="400" class="img-fluid" alt="">
+               </div>
+                </div>
+            </div>
+        </section>
+
+        
+         <!--Education Section-->
+         <section id="Education" class="p-5">
+          <div class="container">
+              <div class="row align-items-center justify-content-between">
+              <div class="col-md p-5">
+                  <h2>Education and Grades</h2>
+                  <p class="lead">
+                      <p>Technological University Dublin (Irish: Ollscoil Teicneolaíochta Bhaile Átha Cliath) or TU Dublin is Ireland's first technological university, established on 1 January 2019, and with a history stretching back to 1887 through the amalgamated Dublin Institute of Technology which progressed from the first technical education institution in Ireland, the City of Dublin Technical Schools. 
+                          It is the second-largest third-level institution in Ireland, with a student population of 28,500.</p>
+                  
+                        <p>The university was formed by the amalgamation of three existing institutes of technology in the Dublin area – Dublin Institute of Technology, Institute of Technology, Blanchardstown, and Institute of Technology, Tallaght, taking over all functions and operations of these institutions.
+                          It is the eighth university in Ireland, and the fourth in the Dublin Region.The university asserts an entrepreneurial ethos and industry-focused approach, with extensive collaboration with industry for research and teaching.
+                          The flagship campus is located within Grangegorman, Dublin, with two other long-term campuses, in Tallaght and Blanchardstown, and remaining legacy sites at Bolton Street and Aungier Street.
+                          TU Dublin has approximately 3,500 staff. Professor David FitzPatrick is the inaugural president, a role in which he serves as of 2021.</p>
+              </div>
+              <div class="col-md">
+                  <a href="https://www.tudublin.ie/" target="_blank">
+                      <img class="img-fluid " src="img/Technological-University-Dublin-Logo.jpg" class="img-fluid" alt="">
+                      </a>
+             </div>
+              </div>
+          </div>
+          <div class="container">
+              <div class="accordion" id="accordionPanelsStayOpenExample">
+                 <!--Year 1-->
+                <div class="accordion-item ">
+                  <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+                     Year 1 Subjects and Grades
+                    </button>
+                  </h2>
+                  <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingOne">
+                    <div class="accordion-body">
+                      <strong>GPA : 2.8 </strong> 
+                      <ul class="list-group">
+                        <li class="list-group-item"><strong> Software Development 1 (B-); </strong></li>
+                        <li class="list-group-item"><strong>Discrete Mats 1 (B+);</strong></li>
+                        <li class="list-group-item"><strong>Database Fundamentals (B); </strong></li>
+                        <li class="list-group-item"><strong> Business & Information System (B); </strong></li>
+                        <li class="list-group-item"><strong>Operating System Fundamentals (C+);</strong></li>
+                        <li class="list-group-item"><strong>Social Media Communications (B);</strong></li>
+                        <li class="list-group-item"><strong> Critical Skills Development (B);</strong></li>
+                        <li class="list-group-item"><strong> System Analysis (C);</strong></li>
+                        <li class="list-group-item"><strong> Visual Design and Used Experience (D);</strong></li>
+                        <li class="list-group-item"><strong>Computer Architecture (C+)</strong></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                 <!--Year 2-->
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+                      Year 2 Subjects and Grades
+                    </button>
+                  </h2>
+                  <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingTwo">
+                    <div class="accordion-body">
+                      <strong>GPA 2.2.</strong> 
+                      <ul class="list-group">
+                        <li class="list-group-item"><strong> Software Development 3 (C);</strong></li>
+                        <li class="list-group-item"><strong>Software Quality Assurance and Testing (B);</strong></li>
+                        <li class="list-group-item"><strong>Advanced Database Technologies (D);</strong></li>
+                        <li class="list-group-item"><strong>Network Fundamentals (D);</strong></li>
+                        <li class="list-group-item"><strong>Client-Side Web Development (D); </strong></li>
+                        <li class="list-group-item"><strong>Discrete Mathematics 2 (A); </strong></li>
+                        <li class="list-group-item"><strong>Software Development 4 (C); </strong></li>
+                        <li class="list-group-item"><strong>Project (C+);</strong></li>
+                        <li class="list-group-item"><strong>Routing & Switching Essentials(D);</strong></li>
+                        <li class="list-group-item"><strong> Information Security (D);</strong></li>
+                        <li class="list-group-item"><strong>Management Science (D).</strong></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                 <!--Year 3-->
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="panelsStayOpen-headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+                      Year 3 Subjects and Grades
+                    </button>
+                  </h2>
+                  <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingThree">
+                    <div class="accordion-body">
+                      <strong>GPA 2.3</strong> 
+                      <ul class="list-group">
+                        <li class="list-group-item"><strong>Data Structure and Algorithms(B-)</strong></li>
+                        <li class="list-group-item"><strong>Data Analytics(C)</strong></li>
+                        <li class="list-group-item"><strong> Big Data(C+)</strong></li>
+                        <li class="list-group-item"><strong>Cloud Service and Dis Comp(C)</strong></li>
+                        <li class="list-group-item"><strong>Server-Side Web Development(C)</strong></li>
+                        <li class="list-group-item"><strong>Operating System(C)</strong></li>
+                        <li class="list-group-item"><strong> Experiential Learning (PS)</strong></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+      </section>
+
+
+        <!-- WORK EXPERENICE SECTION-->
+        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+
+        <section class="timeline_area section_padding_130" id="WorkExperience"  class="p-5">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-12 col-sm-8 col-lg-6">
+                        <!-- Section Heading-->
+                        <div class="section_heading text-center">
+                            <h1>My Work Experenice</h1>
+                            <h3>This showcases the work Experenice that I have done over the years and also some of the skills that I learned as well</h3>
+                            <div class="line"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <!-- Timeline Area-->
+                        <div class="apland-timeline-area">
+                            <!-- Single Timeline Content-->
+                            <div class="single-timeline-area">
+                                <div class="timeline-date wow fadeInLeft" data-wow-delay="0.1s" style="visibility: visible; animation-delay: 0.1s; animation-name: fadeInLeft;">
+                                    <p>DHL JAN - AUG 2020</p>
+                                </div>
+                                <div class="row">
+                                    <div class="col-12 col-md-6 col-lg-4">
+                                        <div class="single-timeline-content d-flex wow fadeInLeft" data-wow-delay="0.3s" style="visibility: visible; animation-delay: 0.3s; animation-name: fadeInLeft;">
+                                            <div class="timeline-icon"><i class="fa fa-address-card" aria-hidden="true"></i></div>
+                                            <div class="timeline-text">
+                                                <h6>Day to Day Services</h6>
+                                                <p>I looked after the day to day services of a IT Department</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-md-6 col-lg-4">
+                                        <div class="single-timeline-content d-flex wow fadeInLeft" data-wow-delay="0.5s" style="visibility: visible; animation-delay: 0.5s; animation-name: fadeInLeft;">
+                                            <div class="timeline-icon"><i class="fa fa-archive" aria-hidden="true"></i></div>
+                                            <div class="timeline-text">
+                                                <h6>Fixed Problems</h6>
+                                                <p>Fixed any issues that people may have had with there computers</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-md-6 col-lg-4">
+                                        <div class="single-timeline-content d-flex wow fadeInLeft" data-wow-delay="0.7s" style="visibility: visible; animation-delay: 0.7s; animation-name: fadeInLeft;">
+                                            <div class="timeline-icon"><i class="fa fa-address-book" aria-hidden="true"></i></div>
+                                            <div class="timeline-text">
+                                                <h6>Database</h6>
+                                                <p>I learned how to replace databases disk and how the operations of IT system work</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Single Timeline Content-->
+                            <div class="single-timeline-area">
+                                <div class="timeline-date wow fadeInLeft" data-wow-delay="0.1s" style="visibility: visible; animation-delay: 0.1s; animation-name: fadeInLeft;">
+                                    <p>Dunnes Stores DEC-2020</p>
+                                </div>
+                                <div class="row">
+                                    <div class="col-12 col-md-6 col-lg-4">
+                                        <div class="single-timeline-content d-flex wow fadeInLeft" data-wow-delay="0.3s" style="visibility: visible; animation-delay: 0.3s; animation-name: fadeInLeft;">
+                                            <div class="timeline-icon"><i class="fa fa-briefcase" aria-hidden="true"></i></div>
+                                            <div class="timeline-text">
+                                                <h6>Stocking Sheleves</h6>
+                                                <p>I would get an section to stack like drinks or crips for my shift</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-md-6 col-lg-4">
+                                        <div class="single-timeline-content d-flex wow fadeInLeft" data-wow-delay="0.5s" style="visibility: visible; animation-delay: 0.5s; animation-name: fadeInLeft;">
+                                            <div class="timeline-icon"><i class="fa fa-desktop" aria-hidden="true"></i></div>
+                                            <div class="timeline-text">
+                                                <h6>Cleaning or Loading</h6>
+                                                <p>Towards the end of my shift I would clean the sheleves or I would load stock</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Single Timeline Content-->
+                            <div class="single-timeline-area">
+                                <div class="timeline-date wow fadeInLeft" data-wow-delay="0.1s" style="visibility: visible; animation-delay: 0.1s; animation-name: fadeInLeft;">
+                                    <p>Thai Plus JAN-JULY 2019</p>
+                                </div>
+                                <div class="row">
+                                    <div class="col-12 col-md-6 col-lg-4">
+                                        <div class="single-timeline-content d-flex wow fadeInLeft" data-wow-delay="0.3s" style="visibility: visible; animation-delay: 0.3s; animation-name: fadeInLeft;">
+                                            <div class="timeline-icon"><i class="fa fa-id-card" aria-hidden="true"></i></div>
+                                            <div class="timeline-text">
+                                                <h6>Cashier</h6>
+                                                <p>I would the casier taking people money and orders for food</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-md-6 col-lg-4">
+                                        <div class="single-timeline-content d-flex wow fadeInLeft" data-wow-delay="0.5s" style="visibility: visible; animation-delay: 0.5s; animation-name: fadeInLeft;">
+                                            <div class="timeline-icon"><i class="fa fa-desktop" aria-hidden="true"></i></div>
+                                            <div class="timeline-text">
+                                                <h6>Hadding out flyers</h6>
+                                                <p>I would had out flyers for the shop throught the mail box</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-md-6 col-lg-4">
+                                        <div class="single-timeline-content d-flex wow fadeInLeft" data-wow-delay="0.7s" style="visibility: visible; animation-delay: 0.7s; animation-name: fadeInLeft;">
+                                            <div class="timeline-icon"><i class="fa fa-picture-o" aria-hidden="true"></i></div>
+                                            <div class="timeline-text">
+                                                <h6>Cleaning</h6>
+                                                <p>I would clean down the tables and wash the floors as well</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+   <!-- Project Section -->
+ <section id="Projects" class="p-5">
+  <h2 class="text-center text-dark">My Projects</h2>
+ <div id="cards_landscape_wrap-2">
+  <div class="container">
+      <div class="row">
+          <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+              <a href="">
+                  <div class="card-flyer">
+                      <div class="text-box">
+                          <div class="image-box">
+                            <a href="https://github.com/lukemorgan98/SDCA" target="_blank">
+                              <img src="img/webproject.jpg" alt="" />
+                            </a>
+                          </div>
+                          <div class="text-container">
+                              <h6>First Year Project</h6>
+                              <p>For my First year project I did a basic Elaped CA where I had to create a basic web page using HTML and CSS and to be uploaded to Github I also had backup for these project</p>
+                          </div>
+                      </div>
+                  </div>
+              </a>
+          </div>
+          <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+              <a href="">
+                  <div class="card-flyer">
+                      <div class="text-box">
+                          <div class="image-box">
+                            <a href="https://github.com/lukemorgan98/GroupProject" target="_blank">
+                              <img src="img/softwaredevlopment.jpg"  alt="" />
+                            </a>
+                          </div>
+                          <div class="text-container">                                    
+                              <h6>Second Year Project</h6>
+                              <p>For my second year project I did a basic Web Project where I had to use Postman and try display a basic profile using MSSQL to connect the web page</p>
+                          </div>
+                      </div>
+                  </div>
+              </a>
+          </div>
+          <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+              <a href="">
+                  <div class="card-flyer">
+                      <div class="text-box">
+                          <div class="image-box">
+                            <a href="https://github.com/lukemorgan98/BaseWebApp" target="_blank">
+                              <img src="img/3rdyearproject.jpg" alt="" />
+                            </a>
+                          </div>
+
+                          <div class="text-container">
+                              <h6>Thrid Year Project</h6>
+                             <p>I built a a E-Commerece website with some other students we used Javascipt, HTML, CSS, and Azure to get an understanding of how everything works</p>
+                          </div>
+                      </div>
+                  </div>
+              </a>
+          </div>
+          <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+              <a href="">
+                  <div class="card-flyer">
+                      <div class="text-box">
+                          <div class="image-box">
+                              <img src="img/fourthyear.jpg" alt="" />
+                          </div>
+                          <div class="text-container">
+                              <h6>Fourth Year Project</h6>
+                             <p>It is currently being worked on and is not yet finished but once it is then you will be able to view it and see what you think of it and download it for yourself</p>
+                          </div>
+                      </div>
+                  </div>
+              </a>
+          </div>
+      </div>
+  </div>
+</div>
+</section>
+
+  <!-- work/project Section -->
+  <section id="services" class="p-5">
+    <div class="container">
+      <h2 class="section-heading" data-outline="Services">Work/Project Interest In</h2>
+      <div class="all-items">
+        <div class="item">
+          <div class="icon">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1"
+                d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+            </svg>
+          </div>
+          <h3 class="item-heading">Full Stack Devloper</h3>
+          <p class="item-desc">One of my work/projects would be a full stack devloper as I like working on the front-end and the back-end </p>
+        </div>
+        <div class="item">
+          <div class="icon">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1"
+                d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z" />
+            </svg>
+          </div>
+          <h3 class="item-heading">Front End Devloper</h3>
+          <p class="item-desc">One of my work/projects would be a front-end devloper because I like working with html and css and JavaScript</p>
+        </div>
+        <div class="item">
+          <div class="icon">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1"
+                d="M10 21h7a2 2 0 002-2V9.414a1 1 0 00-.293-.707l-5.414-5.414A1 1 0 0012.586 3H7a2 2 0 00-2 2v11m0 5l4.879-4.879m0 0a3 3 0 104.243-4.242 3 3 0 00-4.243 4.242z" />
+            </svg>
+          </div>
+          <h3 class="item-heading">Back End Devloper</h3>
+          <p class="item-desc">One of my work/projects would be a back-end devloper because I enjoy working with c#/c++ and MySQL </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+ <!--interest-->
+ <section id="Interest" class="p-5">
+  <h2 class="text-center text-dark">My Interest</h2>
+  <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="img/football.jpg" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h1>FootBall</h1>
+          <p>Football is one of my hobbies and Interest as I have won many trophies for my local club</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="img/music.jpg" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h1>Music</h1>
+          <p>Music is one of my favorite hobbies I love listening to music and have learned to play a bit of guitar</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="img/software.jpg" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h1>Software</h1>
+          <p>My Hobbie is Software I love software I even taught some Scrach as part of work Experience for a PLC</p>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+</section>
+      
+               <!--Contact Section-->  
+              <!-- <section id="Contact" class="p-5"></section>
+                <div class="container p-5 text-center">
+                  <h1>Contact Me</h1>
+                  <form class="row g-3">
+                    <div class="col-md-6">
+                       <label for="firstName" class="form-label">First Name</label>
+                       <input type="text" class="form-control" id="firstName" required>
+                    </div>
+                    <div class="col-md-6">
+                      <label for="lastName" class="form-label">Last Name</label>
+                      <input type="text" class="form-control" id="lastName" required> 
+                    </div>
+                    <div class="col-md-8">
+                      <label for="emailInfo" class="form-label">E-mail</label>
+                      <input type="email" class="form-control" id="emailInfo" required>
+                    </div>
+                    <div class="col-md-4">
+                      <label for="phoneNumber" class="form-label">Phone Number</label>
+                      <input type="text" class="form-control" id="phoneNumber" placeholder="+1 (555) 867-5308">
+                    </div>
+                    <div class="col-md-12">
+                      <label for="comments" class="form-label">Comments, Questions</label>
+                      <textarea class="form-control" id="comments" rows="3" required></textarea>
+                    </div>
+                    <div class="col-md-12"> -->
+                      <!-- Button trigger modal -->
+                       <!-- <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#ContactModal">
+                        Submit
+                      </button>  -->
+                      <!-- Modal -->
+                      <!-- <div class="modal fade" id="ContactModal" tabindex="-1" aria-labelledby="ContactModal" aria-hidden="true">
+                        <div class="modal-dialog">
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <h5 class="modal-title" id="ContactModal">Contact Successful</h5>
+                              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                              Thank you your message has been sent and I will try to back to you  within 2-3 days
+                            </div>
+                            <div class="modal-footer">
+                              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            </div>
+                          </div>
+                        </div>
+                        </div>
+                    </div>
+                  </form>
+                </div>
+                </section> -->
+
+                 <!--Google Map Section --> 
+                <!-- <section>
+                  <div class="container-fluid">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2385.020094326668!2d-6.369243383980117!3d53.28917508669287!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48670b4b300d84c1%3A0x335552be85d4151e!2sTallaght%2C%20Blessington%20Road!5e0!3m2!1sen!2sie!4v1638660905763!5m2!1sen!2sie" 
+                    width="1000" height="600" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                  </div>
+                </section> -->
+
+                <section class="section" id="Contact">
+                  <div class="container">
+                    <div class="row">
+                      <div class="col-md-12 text-center">
+                        <h2 class="section-title">
+                          <span class="text-red">Contact</span>
+                          Me
+                        </h2>
+                        <div class="underline mr-auto ml-auto mb-2"></div>
+                        <p>Get in Touch with me and I will try to get back as soon as possible</p>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-md-12">
+                        <div class="card">
+                            <div class="row">
+                              <div class="col-md-8">
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2384.934373528248!2d-6.363755508847239!3d53.290710621594656!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48670b4b8bdfaa09%3A0x7586712e65fe9986!2sBlessington%20Rd%2C%20Tallaght%2C%20Dublin%2024%2C%20D24%20FKT9!5e0!3m2!1sen!2sie!4v1639261233445!5m2!1sen!2sie" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                              </div>
+                              <div class="col-md-4">
+                                <div class="card">
+                                    <div class="card-body">
+                                <h4>Get in Touch</h4>
+                                <form>
+                                  <div class="mb-3">
+                                    <label></label>
+                                    <input type="text" class="form-control" placeholder="Full Name" required>     
+                                  </div>
+                                  <div class="mb-3">
+                                    <label></label>
+                                    <input type="email" class="form-control" placeholder="Email address">     
+                                  </div>
+                                  <div class="mb-3">
+                                    <label></label>
+                                    <input type="text" class="form-control" placeholder="Phone Number">
+                                  </div>
+                                  <div class="mb-3">
+                                    <label></label>
+                                    <input type="text" class="form-control" placeholder="Subject">
+                                  </div>
+                                  <div class="mb-3">
+                                    <label></label>
+                                    <textarea name="" class="form-control" rows="4" placeholder="Type your Message"></textarea>
+                                  </div>
+                                  <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#ContactModal">
+                                    Submit
+                                  </button> 
+                                 <!-- Modal --> 
+                                  <div class="modal fade" id="ContactModal" tabindex="-1" aria-labelledby="ContactModal" aria-hidden="true">
+                                    <div class="modal-dialog">
+                                      <div class="modal-content">
+                                        <div class="modal-header">
+                                          <h5 class="modal-title" id="ContactModal">Contact Successful</h5>
+                                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                          Thank you your message has been sent and I will try to back to you  within 2-3 days
+                                        </div>
+                                        <div class="modal-footer">
+                                          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    </div>
+                                </form>
+                              </div>
+                              </div>
+                              </div>
+                            </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </section>
+
+       <!--Footer--> 
+       <footer class="p-5 bg-dark text-white text-center position-relative">
+           <div class="container">
+               <p class="lead">Copyright &copy; 2021 CV IMD</p>
+               <a href="secondpage.html" target="_blank">Go to my secon Page to see the link for Github and what components I used in Bootstrap 5</a> 
+               <a href="#" class="position-absolute bottom-0 end-0 p-5">
+                   <i class="bi bi-arrow-up-circle h1"></i>
+               </a>
+           </div>
+
+       </footer>
+      
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    -->
+  </body>
+</html>
